@@ -1,14 +1,13 @@
 import { urlWithQuery } from './helpers'
 import _toPairs from 'lodash/toPairs'
 import _uniqBy from 'lodash/uniqBy'
+import secrets from './secrets'
 
 const data = {
   baseURL: 'https://api.spotify.com/v1',
   loginURL: 'https://accounts.spotify.com/authorize',
   loginParams: {
-    client_id: 'c8fa852cf18c43f9a328c02e00315c9c',
-    client_secret: '7ea3249a2eb84ceabe46d09ab76eda6c',
-    redirect_uri: 'http://localhost:3000/',
+    ...secrets,
     response_type: 'token',
     scope: 'user-read-email'
   }
