@@ -19,8 +19,7 @@ class Search extends Component {
   }
 
   handleSubmit = async (e) => {
-    const albums = await albumSearch(this.state.year,
-      'BQCbA79csqwOjNZ5amX9ZUzGWnrl24EdPja8NhxRrZ7ol4RhtLBfxdzFDnZVY-QHWQdVd9xb3iaQsv8D-CWlZAcyIlYrN_sCnFbiMGOfntzQeqYrdS-nOIXwPjpwVdYNwYAc0z1QHylRuMjIVQ')
+    const albums = await albumSearch(this.state.year, this.props.token)
 
     this.setState({ albums })
   }

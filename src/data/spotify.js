@@ -8,7 +8,7 @@ const data = {
   loginParams: {
     client_id: 'c8fa852cf18c43f9a328c02e00315c9c',
     client_secret: '7ea3249a2eb84ceabe46d09ab76eda6c',
-    redirect_uri: 'http://localhost:3000/callback/',
+    redirect_uri: 'http://localhost:3000/',
     response_type: 'token',
     scope: 'user-read-email'
   }
@@ -34,7 +34,6 @@ const albumSearch = async (year, token, options = {}) => {
     _toPairs({ year, ...options })
       .map(pair => pair.join(':'))
       .join(' '))
-  console.log(query)
   const params = {
     query,
     type: 'album',
