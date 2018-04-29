@@ -1,13 +1,13 @@
 import React from 'react'
 import { Container } from 'rebass'
-import Albums from './containers/Albums'
 import Foot from './components/Foot'
 import Head from './components/Head'
+import Search from './containers/Search'
 
 const WhatYear = () => (
   <Container mx='auto' px={5}>
     <Head />
-    <Albums />
+    <Search />
     <Foot />
   </Container>
 )

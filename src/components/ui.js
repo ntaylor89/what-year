@@ -18,8 +18,11 @@ const Footer = system({
   py: 4
 })
 
-const Header = system({ is: 'header' })
+const Header = system({ is: 'header', pb: 4 })
 
-const Nav = system({ is: 'nav' })
+const Nav = system({
+  is: 'nav',
+  ml: 'auto'
+})
 
 export { Dd, Dl, Dt, Footer, Header, Nav }

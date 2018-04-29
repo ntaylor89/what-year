@@ -5,7 +5,7 @@ import AlbumCard from './AlbumCard'
 const AlbumGrid = ({ albums }) => (
   <Flex flexWrap='wrap' py={4}>
     {albums.map(album => (
-      <AlbumCard album={album} />
+      <AlbumCard album={album} key={album.id} />
     ))}
   </Flex>
 )
